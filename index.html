@@ -1,44 +1,435 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portofolio Zubair</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portofolio Muhammad Abdurahman Zubair, pelajar yang sedang belajar web development.">
+
+    <title>Muhammad Abdurahman Zubair | Portfolio</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS terpisah -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript terpisah -->
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-<header class="header"><nav class="nav container">
-<a class="logo" href="#home">Z<span>.</span></a>
-<button id="menuToggle" class="menu-toggle" aria-label="Buka menu">☰</button>
-<div id="navLinks" class="nav-links">
-<a href="#home">Beranda</a><a href="#about">Tentang</a><a href="#skills">Keahlian</a><a href="#projects">Proyek</a><a href="#contact">Kontak</a>
-<button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">☀️</button>
-</div></nav></header>
-<main>
-<section id="home" class="hero container">
-<div class="reveal"><p class="eyebrow">● SEDANG BELAJAR DAN BERKEMBANG</p><h1>Halo, saya <span class="accent">Muhammad Abdurahman Zubair</span></h1>
-<h2>Saya seorang <span id="typing"></span><span class="cursor">|</span></h2>
-<p class="muted">Saya sedang mempelajari coding dan pengembangan web. Website ini menjadi tempat menampilkan proses belajar dan proyek saya.</p>
-<div class="actions"><a class="button primary" href="#projects">Lihat Proyek ↗</a><a class="button secondary" href="#contact">Hubungi Saya</a></div>
-<p class="muted small">Terus belajar. Terus mencoba. Terus berkembang.</p></div>
-<div class="profile-card reveal"><div class="avatar">Z<span>.</span></div><p class="eyebrow">PORTOFOLIO DIGITAL</p><h2>Zubair</h2><p class="muted">Future Web Developer</p><div class="stats"><div><b>01</b><small>Semangat</small></div><div><b>∞</b><small>Belajar</small></div><div><b>JS</b><small>Eksplorasi</small></div></div></div>
-</section>
-<section id="about" class="section container"><div class="section-title reveal"><p class="eyebrow">01 / TENTANG</p><h2>Kenalan lebih dekat</h2><p class="muted">Kemampuan dibangun dari latihan kecil yang dilakukan secara konsisten.</p></div>
-<div class="two-col"><article class="panel reveal"><h3>Siapa saya?</h3><p class="muted">Saya Zubair, seorang pelajar yang tertarik pada teknologi, coding, dan pembuatan website. Saat ini saya mempelajari HTML, CSS, dan JavaScript melalui praktik langsung.</p><p class="muted">Portofolio ini akan terus berkembang seiring bertambahnya pengetahuan dan proyek.</p></article>
-<article class="panel reveal"><h3>✦ Fokus saat ini</h3><ul class="muted"><li>Memahami dasar web development</li><li>Membuat proyek latihan</li><li>Melatih problem solving</li><li>Menyusun portofolio</li></ul></article></div></section>
-<section id="skills" class="section container"><div class="section-title reveal"><p class="eyebrow">02 / KEAHLIAN</p><h2>Yang sedang saya pelajari</h2><p class="muted">Indikator ini gambaran proses belajar, bukan penilaian resmi.</p></div>
-<div class="three-col"><article class="panel skill reveal"><div class="skill-head"><span class="skill-icon html">5</span><span class="pill">Dasar</span></div><h3>HTML</h3><p class="muted">Menyusun struktur halaman website.</p><div class="track"><span style="width:45%"></span></div></article>
-<article class="panel skill reveal"><div class="skill-head"><span class="skill-icon css">✳</span><span class="pill">Dasar</span></div><h3>CSS</h3><p class="muted">Mengatur tampilan, layout, dan animasi.</p><div class="track"><span style="width:35%"></span></div></article>
-<article class="panel skill reveal"><div class="skill-head"><span class="skill-icon js">JS</span><span class="pill">Pemula</span></div><h3>JavaScript</h3><p class="muted">Membuat website lebih interaktif.</p><div class="track"><span style="width:20%"></span></div></article></div><p class="muted small">Persentase hanya indikator visual dan bisa kamu ubah.</p></section>
-<section id="projects" class="section container"><div class="section-title reveal"><p class="eyebrow">03 / PROYEK</p><h2>Tempat karya saya</h2><p class="muted">Kartu contoh ini bisa diganti dengan proyek buatanmu sendiri.</p></div>
-<div class="three-col"><article class="project panel reveal"><div class="project-art art-one"><b>&lt;HTML&gt;</b></div><p class="eyebrow">LATIHAN WEB</p><h3>Website Portofolio</h3><p class="muted">Website pribadi untuk menampilkan profil, kemampuan, dan karya.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-<article class="project panel reveal"><div class="project-art art-two"><b>123 + 456<br><strong>= 579</strong></b></div><p class="eyebrow">IDE PROYEK</p><h3>Kalkulator sederhana</h3><p class="muted">Latihan logika JavaScript untuk menghitung hasil.</p><div class="tags"><span>JavaScript</span><span>Logika</span></div></article>
-<article class="project panel reveal"><div class="project-art art-three"><b>✓ &nbsp; Daftar tugas</b></div><p class="eyebrow">IDE PROYEK</p><h3>Daftar tugas</h3><p class="muted">Aplikasi latihan untuk mengelola tugas harian.</p><div class="tags"><span>DOM</span><span>JavaScript</span></div></article></div></section>
-<section class="cta container reveal"><div><p class="eyebrow">LANGKAH BERIKUTNYA</p><h2>Setiap ahli pernah menjadi pemula.</h2><p class="muted">Terus berlatih dan selesaikan satu proyek pada satu waktu.</p></div><a class="button primary" href="#contact">Mari terhubung ↗</a></section>
-<section id="contact" class="section container"><div class="section-title reveal"><p class="eyebrow">04 / KONTAK</p><h2>Ada ide atau masukan?</h2><p class="muted">Formulir ini akan menyiapkan email. Tambahkan alamat tujuan di script.js.</p></div>
-<div class="two-col"><div class="panel reveal"><h3>Hubungi saya</h3><p class="muted">Terbuka untuk masukan, ide proyek, dan kesempatan belajar bersama.</p><p class="contact-item">✉ &nbsp; Tambahkan email kamu</p><p class="contact-item">⌘ &nbsp; Fokus: Web development</p></div>
-<form id="contactForm" class="panel form reveal"><label for="name">Nama</label><input id="name" required placeholder="Nama kamu"><label for="email">Email</label><input id="email" type="email" required placeholder="nama@email.com"><label for="message">Pesan</label><textarea id="message" rows="5" required placeholder="Tulis pesanmu..."></textarea><button class="button primary" type="submit">Siapkan pesan ↗</button><p id="formNote" class="muted small" aria-live="polite"></p></form></div></section>
-</main>
-<footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">Z<span>.</span></a><p class="muted">© <span id="year"></span> Zubair. Dibuat sambil terus belajar.</p><a href="#home" class="muted">Kembali ke atas ↑</a></div></footer>
-</body></html>
+
+    <!-- NAVIGASI -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">Z<span>.</span></a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false"
+                aria-controls="navLinks">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- BERANDA -->
+    <main>
+
+        <section class="hero section" id="home">
+            <div class="container hero-layout">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">PORTOFOLIO PRIBADI</p>
+
+                    <p class="hero-greeting">Hi, saya</p>
+
+                    <!-- NAMA LENGKAP -->
+                    <h1 class="hero-name">
+                        <span class="first-name">Muhammad</span>
+                        <span class="full-name">Abdurahman Zubair</span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        Calon <span id="typingText">Web Developer</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Saya sedang belajar coding dan mengembangkan website
+                        serta aplikasi. Saya ingin terus meningkatkan kemampuan
+                        melalui latihan, eksplorasi teknologi, dan proyek nyata.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="button button-primary">
+                            Lihat Proyek
+                        </a>
+
+                        <a href="#contact" class="button button-secondary">
+                            Hubungi Saya
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="status-dot"></span>
+                        Sedang belajar dan membangun proyek baru
+                    </div>
+
+                </div>
+
+
+                <!-- KARTU PROFIL -->
+                <div class="hero-card reveal">
+
+                    <div class="card-orb orb-one"></div>
+                    <div class="card-orb orb-two"></div>
+
+                    <div class="profile-mark">Z</div>
+
+                    <p class="profile-label">HELLO, WORLD!</p>
+
+                    <h2>Muhammad Abdurahman Zubair</h2>
+
+                    <p class="profile-caption">
+                        Belajar hari ini, berkembang setiap hari.
+                    </p>
+
+                    <div class="code-window">
+
+                        <div class="code-window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <small>developer.js</small>
+                        </div>
+
+                        <pre><code><span class="code-purple">const</span> future = {
+  learning: <span class="code-green">true</span>,
+  focus: <span class="code-yellow">'Web Development'</span>,
+  progress: <span class="code-green">100</span>
+};</code></pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TENTANG SAYA -->
+        <section class="section section-muted" id="about">
+            <div class="container narrow-container reveal">
+
+                <p class="eyebrow">KENALI SAYA</p>
+
+                <h2 class="section-title">Tentang Saya</h2>
+
+                <p class="section-lead">
+                    Saya adalah pelajar yang tertarik pada teknologi
+                    dan pengembangan web. Saat ini saya mempelajari
+                    dasar-dasar HTML, CSS, dan JavaScript.
+                </p>
+
+                <p class="body-copy">
+                    Saya percaya bahwa kemampuan coding berkembang melalui
+                    proses. Mulai dari memahami konsep, mencoba membuat sesuatu,
+                    menemukan kesalahan, lalu memperbaikinya.
+                    Portofolio ini menjadi tempat untuk mendokumentasikan
+                    perjalanan belajar dan proyek saya.
+                </p>
+
+                <div class="about-facts">
+
+                    <article class="fact-card">
+                        <span class="fact-number">01</span>
+                        <h3>Terus Belajar</h3>
+                        <p>
+                            Mempelajari konsep dan teknologi baru
+                            secara bertahap.
+                        </p>
+                    </article>
+
+                    <article class="fact-card">
+                        <span class="fact-number">02</span>
+                        <h3>Praktik Langsung</h3>
+                        <p>
+                            Mengubah materi yang dipelajari menjadi
+                            proyek sederhana.
+                        </p>
+                    </article>
+
+                    <article class="fact-card">
+                        <span class="fact-number">03</span>
+                        <h3>Terus Berkembang</h3>
+                        <p>
+                            Memperbaiki proyek berdasarkan pengalaman
+                            dan masukan.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KEAHLIAN -->
+        <section class="section" id="skills">
+            <div class="container reveal">
+
+                <p class="eyebrow">YANG SEDANG SAYA PELAJARI</p>
+
+                <h2 class="section-title">Keahlian</h2>
+
+                <p class="section-lead">
+                    Beberapa teknologi yang sedang saya pelajari
+                    dan gunakan dalam latihan.
+                </p>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-number">01</div>
+                        <h3>HTML</h3>
+                        <p>
+                            Menyusun struktur halaman website dengan
+                            elemen yang teratur dan semantik.
+                        </p>
+                        <span class="skill-tag">Struktur Website</span>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-number">02</div>
+                        <h3>CSS</h3>
+                        <p>
+                            Mengatur warna, tipografi, tata letak,
+                            jarak, dan tampilan responsif.
+                        </p>
+                        <span class="skill-tag">Desain Website</span>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-number">03</div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Mempelajari logika pemrograman dan
+                            membuat halaman lebih interaktif.
+                        </p>
+                        <span class="skill-tag">Interaksi</span>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROYEK -->
+        <section class="section section-muted" id="projects">
+            <div class="container reveal">
+
+                <p class="eyebrow">HASIL LATIHAN</p>
+
+                <h2 class="section-title">Proyek Pilihan</h2>
+
+                <p class="section-lead">
+                    Beberapa proyek yang menjadi bagian dari perjalanan
+                    saya dalam belajar coding.
+                </p>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-topline">
+                            <span class="project-index">PROJECT 01</span>
+                            <span class="project-symbol">&lt;/&gt;</span>
+                        </div>
+
+                        <h3>Website Portofolio</h3>
+
+                        <p>
+                            Website pribadi untuk memperkenalkan diri
+                            dan mendokumentasikan perjalanan belajar coding.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#home" class="project-link">
+                            Lihat halaman ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-topline">
+                            <span class="project-index">PROJECT 02</span>
+                            <span class="project-symbol">＋</span>
+                        </div>
+
+                        <h3>Proyek Berikutnya</h3>
+
+                        <p>
+                            Tempat untuk menampilkan proyek baru setelah
+                            selesai dibuat, diuji, dan dikembangkan.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Latihan</span>
+                            <span>Pengembangan</span>
+                        </div>
+
+                        <span class="project-link project-link-muted">
+                            Segera hadir
+                        </span>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-topline">
+                            <span class="project-index">PROJECT 03</span>
+                            <span class="project-symbol">{ }</span>
+                        </div>
+
+                        <h3>Eksperimen Coding</h3>
+
+                        <p>
+                            Kumpulan percobaan kecil untuk memahami
+                            logika dan fitur website secara bertahap.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Eksperimen</span>
+                        </div>
+
+                        <span class="project-link project-link-muted">
+                            Dalam proses belajar
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KONTAK -->
+        <section class="section" id="contact">
+            <div class="container contact-layout reveal">
+
+                <div class="contact-copy">
+
+                    <p class="eyebrow">TERHUBUNG</p>
+
+                    <h2 class="section-title">Mari Terhubung</h2>
+
+                    <p class="section-lead">
+                        Punya saran, ide proyek, atau ingin berdiskusi
+                        tentang coding? Kamu bisa menyiapkan pesan
+                        melalui formulir ini.
+                    </p>
+
+                    <p class="contact-hint">
+                        Formulir ini menggunakan aplikasi email
+                        di perangkatmu.
+                    </p>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <label for="name">Nama</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Nama kamu"
+                        required>
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="nama@email.com"
+                        required>
+
+                    <label for="message">Pesan</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tulis pesan kamu..."
+                        required></textarea>
+
+                    <button class="button button-primary form-button" type="submit">
+                        Siapkan Email ↗
+                    </button>
+
+                    <p class="form-note" id="formNote" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+
+            <a href="#home" class="logo footer-logo">Z<span>.</span></a>
+
+            <p>
+                © <span id="currentYear"></span>
+                Muhammad Abdurahman Zubair.
+            </p>
+
+            <a href="#home" class="back-to-top">
+                Kembali ke atas ↑
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
