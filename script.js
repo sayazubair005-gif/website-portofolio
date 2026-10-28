@@ -188,3 +188,85 @@ if ("IntersectionObserver" in window) {
   });
 
 }
+/* ANIMASI MUNCUL SAAT SCROLL */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* BERANDA TETAP TERLIHAT */
+.hero-content.reveal {
+    opacity: 1;
+    transform: none;
+}
+
+/* EFEK HOVER KARTU */
+.skill-card,
+.project-card,
+.fact-card {
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.fact-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(96, 165, 250, 0.65);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* EFEK HOVER TOMBOL */
+.btn {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(96, 165, 250, 0.25);
+}
+
+/* EFEK MENU NAVIGASI */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent);
+}
+
+/* ANIMASI TEKS BERGANTI */
+#typingText {
+    display: inline-block;
+    color: var(--accent);
+    transition: opacity 0.2s ease;
+}
+
+/* PENGATURAN AKSESIBILITAS */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
