@@ -188,19 +188,6 @@ if ("IntersectionObserver" in window) {
   });
 
 }
-/* ANIMASI MUNCUL SAAT SCROLL */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-}
-
-.reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* BERANDA TETAP TERLIHAT */
 .hero-content.reveal {
